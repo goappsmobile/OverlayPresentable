@@ -72,7 +72,7 @@ extension OverlayPresentable {
     }
     
     // Wrapper method for animations
-    private func animate(_ view: UIView, animations: @escaping ((Void) -> Void), animated: Bool, completion: ((Bool) -> Void)? = nil) {
+    private func animate(_ view: UIView, animations: @escaping (() -> Void), animated: Bool, completion: ((Bool) -> Void)? = nil) {
         let duration = animated ? overlayView.animationDuration : 0
         UIView.transition(with: view, duration: duration, options: overlayView.animationOptions, animations: animations, completion: completion)
     }
