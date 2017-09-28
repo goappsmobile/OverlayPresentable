@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "OverlayPresentable"
-  s.version      = "0.1"
+  s.version      = "0.2"
   s.summary      = "OverlayPresentable is a protocol for easier presenting an overlay in your view"
   s.description  = <<-DESC
   OverlayPresentable gives you tools to easy show an overlay in a view. For example when you want to
