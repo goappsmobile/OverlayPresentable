@@ -14,7 +14,7 @@ open class OverlayView: UIView {
     open var animationDuration: TimeInterval = 0.3
     
     /// `UIViewAnimationOptions` of adding as overlay animation
-    open var animationOptions: UIViewAnimationOptions = [.beginFromCurrentState, .transitionCrossDissolve]
+    open var animationOptions: UIView.AnimationOptions = [.beginFromCurrentState, .transitionCrossDissolve]
 }
 
 extension OverlayView {
@@ -26,7 +26,7 @@ extension OverlayView {
         translatesAutoresizingMaskIntoConstraints = false
         
         view.addSubview(self)
-        view.bringSubview(toFront: self)
+        view.bringSubviewToFront(self)
         
         let leftConstraint = NSLayoutConstraint(item: view, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left, multiplier: 1, constant: 0)
         let rightConstraint = NSLayoutConstraint(item: view, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right, multiplier: 1, constant: 0)
