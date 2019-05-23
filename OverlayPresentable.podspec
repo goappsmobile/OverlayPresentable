@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "OverlayPresentable"
-  s.version      = "0.2"
+  s.version      = "0.3"
   s.summary      = "OverlayPresentable is a protocol for easier presenting an overlay in your view"
   s.description  = <<-DESC
   OverlayPresentable gives you tools to easy show an overlay in a view. For example when you want to
@@ -13,5 +13,5 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/goappsmobile/OverlayPresentable.git", :tag => "#{s.version}" }
   s.source_files  = "OverlayPresentable", "OverlayPresentable/**/*.{h,m,swift}"
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3' }
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5' }
 end
